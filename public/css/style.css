@@ -1,0 +1,169 @@
+@import "skeleton.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+html {
+    width: 100%;
+}
+body {
+    position: relative;
+    min-width: 960px;
+    background-color: #1C1D1F;
+    color: #D7D7AF;
+    font-family: 'Source Code Pro', monospace;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/******** header *********/
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+header {
+    display: block;
+}
+
+header #mainLogo {
+    font-family: 'Source Code Pro', monospace;
+    
+}
+#mainLogo a {
+    display: block;
+    text-decoration: none;
+    color: #EE9E2E;
+}
+
+/******** Navigation Menu *********/
+/* nav block */
+#menu {
+    overflow: hidden;
+    height: 4.5em;
+    margin-bottom: 1.25em;
+    /*border-bottom: 2px dashed #636b6F;*/
+    
+}
+/**** navigations *****/
+#menu ul {
+   /* padding-left: 1em;*/
+
+}
+
+#menu li {
+    display: inline-block;
+    padding: 0em 1.5em;
+    line-height: 4.5em;
+}
+
+#menu a {
+    display: block;
+    float: left;
+    margin-right: 0.12em;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: #68C162;
+}
+
+#menu ul li.current a{
+    font-weight: bold;
+    
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+.content{
+    padding:0 4em 0 4em;
+}
+
+footer{
+    padding: 2em 4em;
+}
+
+/******** Lists *************/
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.list {
+    margin-bottom: 8px;
+}
+
+
+ul.list li {
+    padding-left: 22px;
+}
+
+ul.list li+li {
+    margin-top: 4px;
+}
+
+.error{
+    color: red;
+}
+
+/********* Resusable classes ********/
+
+/*Horizontal Line*/
+.horiz {
+    padding-top: 43px;
+    border-bottom: 2px dashed #636b6F;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fleft {
+    float: left;
+    width: auto !important;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+
+.fright {
+    float: right !important;
+}
+
+.alright {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+
+.clear {
+    float: none !important;
+    clear: both;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+.space{
+    margin: 2em;
+}
+/**** Resusable classes End ****/
+
+
+
+
+
+
+
+
+

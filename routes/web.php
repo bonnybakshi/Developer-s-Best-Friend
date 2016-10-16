@@ -11,6 +11,22 @@
 |
 */
 
+
+
+/*
+*Lorem resource
+*/
+Route::get('/lorem', 'LoremController@index')->name('lorem.index');
+Route::get('/lorem/show','LoremController@showLorem');
+Route::post('/lorem/show','LoremController@getLorem');
+
+
+
+
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
