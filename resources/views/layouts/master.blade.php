@@ -29,10 +29,11 @@
             <nav id="menu">
                 <ul >
                     <li><a href="/lorem">&#64;Lorem Ipsum Generator</a></li>
-                    <li><a href="/">&#64;Random User Generator</a></li>
+                    <li><a href="/user">&#64;Random User Generator</a></li>
                     <li><a href="/">&#64;Password Generator</a></li>
                    </ul>
-            </nav>   
+            </nav> 
+            <hr>  
       </div>   
    	</div>
 	</div><!-- end of container -->

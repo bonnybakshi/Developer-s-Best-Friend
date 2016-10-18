@@ -20,7 +20,9 @@ Route::get('/lorem', 'LoremController@index')->name('lorem.index');
 Route::get('/lorem/show','LoremController@showLorem');
 Route::post('/lorem/show','LoremController@getLorem');
 
-
+Route::get('/user','UserController@index');
+Route::get('/user/show','UserController@show');
+Route::post('/user/show','UserController@getUser');
 
 
 
