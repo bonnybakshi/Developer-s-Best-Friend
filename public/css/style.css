@@ -117,14 +117,22 @@ ul.list li+li {
     color: red;
 }
 
+.userbox{
+    padding: 20px;
+    border: 2px dashed #636b6F;
+    margin: 0 auto;
+    display:block;
+}
+
 /********* Resusable classes ********/
 
 /*Horizontal Line*/
 .horiz {
     padding-top: 43px;
-    border-bottom: 2px dashed #636b6F;
+    border-top: 2px dashed #636b6F;
     width: 100%;
     margin: 0 auto;
+    display:block;
 }
 
 .fleft {

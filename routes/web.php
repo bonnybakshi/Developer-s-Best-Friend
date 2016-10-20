@@ -24,8 +24,9 @@ Route::get('/user','UserController@index');
 Route::get('/user/show','UserController@show');
 Route::post('/user/show','UserController@getUser');
 
-
-
+Route::get('/password','PasswordController@index');
+Route::get('/password/show','PasswordController@show');
+Route::post('/password/','PasswordController@getPassword');
 
 
 

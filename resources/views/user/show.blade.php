@@ -6,30 +6,27 @@
 
 <div class="container">
     <h1>Random User List</h1>
-    
-    <?php  
-    #require the Faker autoloader
-    require_once '../vendor/fzaninotto/faker/src/autoload.php';
-    #create a Faker\Generator instance
-    $faker = \Faker\Factory::create();
-    ?>
+    <hr>
+    @for($i = 0; $i < count($users); $i++)
+        <div class="userbox">
+        <p><strong>Name: {{$users[$i]->name}}</strong></p>
+        
+        @if(isset($users[$i]->phone))
+            <p>Phone Number: {{$users[$i]->phone}}</p>
+        @endif
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Phone Number</th>
-            <th>E-mail Address</th>
-            <th>Address</th>
-        </tr>
-        @for($i=0; $i < $count; $i++) 
-            <tr>
-                <td>{{ $faker->name}}</td>
-                <td>{{ $faker->phoneNumber}}</td>
-                <td>{{ $faker->email }}</td>
-                <td>{{ $faker->address }}</td>
-            </tr>
-        @endfor
-    </table> 
+        @if(isset($users[$i]->email))
+            <p>Email Address: {{$users[$i]->email}}</p>
+        @endif
+
+        @if(isset($users[$i]->address))
+            <p>Address: {{$users[$i]->address}}</p>
+        @endif
+        </div> 
+        <br>
+        <br>
+    @endfor
+    
 </div>
 
 @endsection

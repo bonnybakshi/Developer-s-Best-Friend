@@ -30,10 +30,9 @@
                 <ul >
                     <li><a href="/lorem">&#64;Lorem Ipsum Generator</a></li>
                     <li><a href="/user">&#64;Random User Generator</a></li>
-                    <li><a href="/">&#64;Password Generator</a></li>
+                    <li><a href="/password">&#64;Password Generator</a></li>
                    </ul>
             </nav> 
-            <hr>  
       </div>   
    	</div>
 	</div><!-- end of container -->
@@ -45,8 +44,10 @@
 	</section>
 
 	<footer>
+    <div class="container">
 		&copy; {{ date('Y') }} Rajrupa Bakshi &nbsp;&nbsp;
         <a href='https://github.com/rajrupabakshi/p3' target='_blank'><i class='p3_github'></i> View on Github</a> &nbsp;&nbsp;
+    </div>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
