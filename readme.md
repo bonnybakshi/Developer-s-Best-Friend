@@ -7,12 +7,7 @@ Developer's Best Friend
 <http://p3.rbakshi.me>
 
 ## Description of the project
-* Generates a random phrase 
-* Form inputs will specify:
-  * How many words to use.
-  * Whether to include a number.
-  * Whether to include a special symbol
-  * All upper case or all lower case
+
 
 ## Link to screencast demo
 [P2 Demo]()
