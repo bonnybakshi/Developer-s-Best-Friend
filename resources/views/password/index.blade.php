@@ -4,7 +4,8 @@
 
 @section('content')
 <div class='container'>
-	<h2> <img src="https://openclipart.org/download/190821/Cles-de-serrure-lock-keys.svg" width="50" alt="key clip art" /> xkcd Password Generator</h2>
+	<h2> <img src="https://openclipart.org/download/190821/Cles-de-serrure-lock-keys.svg" width="50" alt="key clip art" />Password Generator</h2>
+	<p>Generates a random phrase</p>
 
 	@if(isset($password)) 
     	<h3>PASSWORD: <?php echo $password; ?></h3> 
@@ -29,7 +30,7 @@
 		</div>	
 		
 		<div class="form-group">
-		<label class="form-check-label">
+		<label >
 	  	<input class="form-check-input" type="checkbox"  name="number" id="number" 
 		value="{{ old('number') }}"
 	  	> Include a number

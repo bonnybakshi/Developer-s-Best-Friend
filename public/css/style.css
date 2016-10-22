@@ -122,6 +122,43 @@ ul.list li+li {
     border: 2px dashed #636b6F;
     margin: 0 auto;
     display:block;
+
+}
+/******User card**********/
+.usercard{
+    background-color: white;
+    color: #383838;
+    width: 450px;
+    padding-bottom: 10px
+    
+}
+.userName{
+    font-size: 1.5em;
+    color: white;
+    padding: 10px 0 0 10px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+}
+.top{
+    background-color: #383838;
+}
+.userinfo{
+    padding: 10px;
+    font-family: 'Abel', sans-serif;
+}
+.company{
+    color:white;
+    padding: 0 0 10px 10px;
+    font-size: 1.2em;
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+}
+.jobtitle{
+    color:white;
+    padding: 0 0 10px 10px;
+    font-size: 1em;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 0;
 }
 
 /********* Resusable classes ********/

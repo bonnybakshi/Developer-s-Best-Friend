@@ -31,15 +31,11 @@ class UserController extends Controller
             'count'  => 'required|numeric|between:1,100',
         ]);
         $data = $request->all();
-        dump($data);
         foreach ($data as $name => $value){
             if($name == "count"){
-                dump($value);
             }
             if($name == "language"){
-                dump($value);
-            }
-            
+            }   
         }
         
         $count = $request->input('count');
@@ -70,7 +66,12 @@ class UserController extends Controller
             if($request->input('address') == '1'){
                 $users[$i]->address = $faker->address;
             }
-            
+            if($request->input('company') == '1'){
+                $users[$i]->company = $faker->company;
+            }
+            if($request->input('jobTitle') == '1'){
+                $users[$i]->jobTitle = $faker->jobTitle;
+            }  
         }
        return view('user.show',['users'=>$users]);
             

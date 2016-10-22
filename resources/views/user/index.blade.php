@@ -5,7 +5,8 @@
 @section('content')
 <div class="container">
   <h2>Genetate Random User</h2>
- 
+  <p>Generates a random list of users.
+    </p>
   <form method="POST" action="/user/show" role="form">
 
     {{ csrf_field() }}
@@ -30,24 +31,41 @@
           checked
       @endif
       >
-      Show Phone number</label>
+      Phone number</label>
     </div>
-    <div class="optional-item">
+    <div>
       <label><input type="checkbox" id="email" name="email" value="1"
       @if (old('email') != null)
           checked
       @endif
       >
-      Show Email Address</label>
+      Email</label>
     </div>
-    <div class="optional-item">
+    <div>
       <label><input type="checkbox" id="address" name="address" value="1"
       @if (old('address') != null)
           checked
       @endif
       >
-      Show Address</label>
+      Address</label>
     </div>
+    <div>
+      <label><input type="checkbox" id="jobTitle" name="jobTitle" value="1"
+      @if (old('jobTitle') != null)
+          checked
+      @endif
+      >
+      Job Title</label>
+    </div>
+    <div>
+      <label><input type="checkbox" id="company" name="company" value="1"
+      @if (old('company') != null)
+          checked
+      @endif
+      >
+      Company</label>
+    </div>
+    
 
     <h3>Select Language</h3>
     <div class="form-group">

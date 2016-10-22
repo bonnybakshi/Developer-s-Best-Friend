@@ -5,10 +5,7 @@
 @section('content')
 <div class="container">
     <h2>Lorem Ipsum Generator</h2>
-    <h3>What is Lorem Ipsum?</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    <br>
-    <a href="http://www.lipsum.com/">More facts about Lorem Ipsum </a>
+    <p>Lorem Ipsum generator is a simple tool that generates dummy text as per your project requirement.  It helps designers replace meaningful content with placeholder text for visual presentation.
     </p>
 
     <h4>Generate Lorem Ipsum</h4>
@@ -32,9 +29,9 @@
 	
     <div class="form-group">
       	<label>Select one</label><br>
-      	<input type="radio" name="textType" value="paragraphs" checked> Paragraphs<br>
-  		<input type="radio" name="textType" value="sentences"> Sentences<br>
-  		<input type="radio" name="textType" value="words" > Words
+      	<input type="radio" name="textType" value="paragraphs" checked> Generate Paragraphs<br>
+  		<input type="radio" name="textType" value="sentences"> Generate Sentences<br>
+  		<input type="radio" name="textType" value="words" > Generate Words
     </div>
 
     <div class="form-group">

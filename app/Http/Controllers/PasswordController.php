@@ -15,14 +15,7 @@ class PasswordController extends Controller
      */
      public function index(Request $request)
     {
-         if($request->get('password')) {
-            $password = $request->get('password');
-        }
-        else {
-            $password = '';
-        }
-
-        return view('password.index')->with('password', $password);
+        return view('password.index')->with('password', session('password'));
     }
 
 
@@ -101,9 +94,9 @@ class PasswordController extends Controller
             $number = rand(0, 9);
             $password .= $number;
         }
-        $request->session()->flash('password', $password);
+        #$request->session()->flash('password', $password);
         #return view('password.index') -> with('password', $password);
-        return redirect('/password')->withInput();               
+        return redirect('/password')->withInput()->with('password', $password);              
     }
 
     /**

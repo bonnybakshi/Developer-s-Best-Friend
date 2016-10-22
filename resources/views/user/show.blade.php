@@ -8,20 +8,29 @@
     <h1>Random User List</h1>
     <hr>
     @for($i = 0; $i < count($users); $i++)
-        <div class="userbox">
-        <p><strong>Name: {{$users[$i]->name}}</strong></p>
-        
+        <div class="usercard">
+        <div class="top">
+        <p class=" userName"><strong>{{$users[$i]->name}}</strong></p>
+        @if(isset($users[$i]->jobTitle))
+           <p class=" jobtitle">{{$users[$i]->jobTitle}}</p>
+        @endif
+        @if(isset($users[$i]->company))
+           <p class="company">{{$users[$i]->company}}</p>
+        @endif
+        </div>
+        <div class="userinfo">
         @if(isset($users[$i]->phone))
-            <p>Phone Number: {{$users[$i]->phone}}</p>
+            <p>Phone: {{$users[$i]->phone}}</p>
         @endif
 
         @if(isset($users[$i]->email))
-            <p>Email Address: {{$users[$i]->email}}</p>
+            <p>Email: {{$users[$i]->email}}</p>
         @endif
-
         @if(isset($users[$i]->address))
-            <p>Address: {{$users[$i]->address}}</p>
+            <p class="useradd">Address: {{$users[$i]->address}}</p>
         @endif
+        
+        </div>
         </div> 
         <br>
         <br>
