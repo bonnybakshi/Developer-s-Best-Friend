@@ -7,7 +7,7 @@
   <h2>Genetate Random User</h2>
   <p>Generates a random list of users.
     </p>
-  <form method="POST" action="/user/show" role="form">
+  <form method="POST" action="/user/show">
 
     {{ csrf_field() }}
     

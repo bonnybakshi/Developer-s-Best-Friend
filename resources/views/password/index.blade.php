@@ -30,7 +30,7 @@
 		</div>	
 		
 		<div class="form-group">
-		<label >
+		<label class="form-check-label">
 	  	<input class="form-check-input" type="checkbox"  name="number" id="number" 
 		value="{{ old('number') }}"
 	  	> Include a number
