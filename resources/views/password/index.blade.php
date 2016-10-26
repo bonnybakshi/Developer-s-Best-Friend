@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Random User')
+@section('title', 'Password Generator')
 
 @section('content')
 <div class='container'>
