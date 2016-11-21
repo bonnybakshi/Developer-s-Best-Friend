@@ -4,7 +4,9 @@
 
 @section('content')
 <div class="container">
-  <h2>Genetate Random User</h2>
+<div class="row">
+<div class="col-md-12">
+  <h3>Genetate Random User</h3>
   <p>Generates a random list of users.
     </p>
   <form method="POST" action="/user/show">
@@ -79,5 +81,7 @@
       <button type="submit" class="btn btn-primary">Generate</button>
     </div>
   </form>
+</div>
+</div>
 </div>
 @endsection

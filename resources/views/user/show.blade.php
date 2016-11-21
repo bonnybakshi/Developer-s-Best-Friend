@@ -5,7 +5,10 @@
 @section('content')
 
 <div class="container">
-    <h1>Random User List</h1>
+<div class="row">
+<div class="col-md-12">
+    <a href="/user"><i class="fa fa-arrow-left"></i> Go back</a> <br>
+    <h3>Random User List</h3>
     <hr>
     @for($i = 0; $i < count($users); $i++)
         <div class="usercard">
@@ -36,6 +39,8 @@
         <br>
     @endfor
     
+</div>
+</div>
 </div>
 
 @endsection

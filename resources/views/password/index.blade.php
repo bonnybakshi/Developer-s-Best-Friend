@@ -3,8 +3,10 @@
 @section('title', 'Password Generator')
 
 @section('content')
-<div class='container'>
-	<h2> <img src="https://openclipart.org/download/190821/Cles-de-serrure-lock-keys.svg" width="50" alt="key clip art" />Password Generator</h2>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+	<h3> <img src="https://openclipart.org/download/190821/Cles-de-serrure-lock-keys.svg" width="50" alt="key clip art" />Password Generator</h3>
 	<p>Generates a random phrase</p>
 
 	@if(isset($password)) 
@@ -66,5 +68,7 @@
 	<a href='http://xkcd.com/936/'>
 	<img class='xkcd center' src='http://imgs.xkcd.com/comics/password_strength.png' alt='xkcd password strength'>
 	</a>
+</div>
+</div>
 </div>
 @endsection
