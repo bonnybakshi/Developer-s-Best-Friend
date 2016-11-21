@@ -10,7 +10,7 @@ Developer's Best Friend
 Developer’s best friend is a laravel based web application, which includes a Lorem Ipsum text generator, a random user generator and a password generator. 
 
 ## Link to screencast demo
-[P2 Demo](https://youtu.be/EzY2UtgNM_E)
+[P3 Demo](https://youtu.be/EzY2UtgNM_E)
 
 ## Outside Sources
 * Lecture examples - For reference
